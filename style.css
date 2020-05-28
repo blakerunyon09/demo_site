@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+}
+
+.style-item {
+    background-color: blue
+}
+
+.style-item:nth-child(odd) {
+    background-color: blueviolet
+}
