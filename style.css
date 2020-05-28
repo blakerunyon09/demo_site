@@ -1,9 +1,19 @@
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .style-item {
-    background-color: blue
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: helvetica;
+    color: white;
+    padding: 25px;
+    border-radius: 7px;
+    margin: 3px;
+    flex-basis: 20%;
 }
 
 .style-item:nth-child(odd) {
