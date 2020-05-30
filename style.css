@@ -33,35 +33,6 @@ header {
     font-size: 1.2rem
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 2.5%
-}
-
-.flex-item-type1 {
-    flex: 32%;
-    min-width: 250px;
-    margin: 3px;
-}
-
-.flex-item-type2 {
-    flex: 49%;
-    min-width: 250px;
-    margin: 3px;
-}
-
-.flex-item-type2:nth-child(3) {
-    flex: 100%;
-    margin: 3px;
-}
-
-.flex-item-type3 {
-    flex: 100%;
-    margin: 3px;
-}
-
 .style-item {
     font-size: 25px;
     text-transform: uppercase;
@@ -69,7 +40,7 @@ header {
     color: white;
     border-radius: 7px;
     background-color: blue;
-    margin-bottom: 8px;
+    margin-bottom: 8px
 }
 
 .style-item p {
@@ -80,4 +51,45 @@ header {
 
 .style-item:nth-child(odd) {
     background-color: blueviolet
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2.5%
+}
+
+.no-wrap {
+    flex-wrap: nowrap
+}
+
+.no-wrap p {
+    padding: 300px 25px
+}
+
+.flex-item-type1 {
+    flex: 32%;
+    min-width: 250px;
+    margin: 3px
+}
+
+.flex-item-type2 {
+    flex: 49%;
+    min-width: 250px;
+    margin: 3px
+}
+
+.flex-item-type2:nth-child(3) {
+    flex: 100%;
+    margin: 3px
+}
+
+.flex-item-type3 {
+    flex: 1;
+    margin: 0 3px
+}
+
+.flex-item-type3sm {
+    margin: 0 3px
 }
