@@ -18,8 +18,10 @@ function addListItem(e) {
 function updateItems(e) {
   const item = e.target;
   if (item.innerText === "Delete") {
+    //Delete Items
     item.parentNode.remove();
   } else if (item.innerText === "Done") {
+    // Cross Out Items
     item.parentNode.style.textDecoration = "line-through";
   }
 }
