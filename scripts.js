@@ -1,18 +1,25 @@
 // Selectors
 const todoForm = document.querySelector("#todo-form");
-let todoInput = todoForm.childNodes[1];
+const todoInput = todoForm.childNodes[1];
 const todoSubmit = todoForm.childNodes[3];
 const fullList = document.querySelector("#todo-list");
 
 // Listeners
 todoSubmit.addEventListener("click", addListItem);
+fullList.addEventListener("click", updateItems);
 
 // Functions
 function addListItem(e) {
   e.preventDefault();
-  console.log(todoInput.value);
-  fullList.innerHTML += `<li>${todoInput.value}`;
-  fullList.innerHTML += `<span class="done">Done</span>`;
-  fullList.innerHTML += `<span class="delete">Delete<span></li>`;
+  fullList.innerHTML += `<li>${todoInput.value}<span class="done">Done</span><span class="delete">Delete</span></li>`;
   todoInput.value = "";
+}
+
+function updateItems(e) {
+  const item = e.target;
+  if (item.innerText === "Delete") {
+    item.parentNode.remove();
+  } else if (item.innerText === "Done") {
+    item.parentNode.style.textDecoration = "line-through";
+  }
 }

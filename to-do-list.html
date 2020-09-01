@@ -20,13 +20,20 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <form id="todo-form">
-      <input type="text" />
-      <input type="submit" value="Add Item" />
-    </form>
-
-    <ul id="todo-list"></ul>
-
+    <div>
+      <form id="todo-form">
+        <input type="text" />
+        <input type="submit" value="Add Item" />
+        <select id="selector" form="todo-form">
+          <option value="all">All</option>
+          <option value="complete">Complete</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </form>
+    </div>
+    <div>
+      <ul id="todo-list"></ul>
+    </div>
     <script src="scripts.js" async defer></script>
   </body>
 </html>
