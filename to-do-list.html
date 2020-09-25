@@ -12,6 +12,15 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(to right, #ffafbd, #ffc3a0);
+      }
+    </style>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,19 +29,24 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <div>
+    <div id="list">
       <form id="todo-form">
         <input type="text" />
-        <input type="submit" value="Add Item" />
+        <input type="submit" value="+" />
+        <i class="fas fa-plus"></i>
         <select id="selector" form="todo-form">
           <option value="all">All</option>
           <option value="complete">Complete</option>
           <option value="incomplete">Incomplete</option>
         </select>
       </form>
-    </div>
-    <div>
-      <ul id="todo-list"></ul>
+      <ul id="todo-list">
+        <li>
+          Sample Task
+          <span class="done">Done</span>
+          <span class="delete">Delete</span>
+        </li>
+      </ul>
     </div>
     <script src="scripts.js" async defer></script>
   </body>

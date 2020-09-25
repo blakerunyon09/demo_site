@@ -221,3 +221,41 @@ header {
 .grid-item-cn {
   grid-area: cn;
 }
+
+/* To Do List Styles */
+
+#list {
+  display: flex;
+  margin: 25% auto;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#todo-form > [type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#todo-form > [type="submit"] {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  color: white;
+  background-color: #afbdff;
+  padding: 5px;
+}
+
+select {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 20px;
+  -webkit-appearance: none;
+  color: white;
+  background-color: #c3a0ff;
+  padding: 5px;
+}
