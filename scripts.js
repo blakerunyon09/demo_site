@@ -11,8 +11,21 @@ fullList.addEventListener("click", updateItems);
 // Functions
 function addListItem(e) {
   e.preventDefault();
-  fullList.innerHTML += `<li>${todoInput.value}<span class="done">Done</span><span class="delete">Delete</span></li>`;
-  todoInput.value = "";
+  if (todoInput.value === "") {
+    todoSubmit.style.transition = "1s";
+    todoSubmit.style.color = "red";
+    todoSubmit.addEventListener("transitionend", () => {
+      todoSubmit.style.color = "";
+    });
+  } else {
+    fullList.innerHTML += `
+  <li>
+    <i class="far fa-circle"></i>
+      ${todoInput.value}
+    <i class="fas fa-times"></i>
+  </li>`;
+    todoInput.value = "";
+  }
 }
 
 function updateItems(e) {

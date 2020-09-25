@@ -226,22 +226,27 @@ header {
 
 #list {
   display: flex;
-  margin: 25% auto;
+  margin: 10% auto;
   flex-flow: column wrap;
   align-items: center;
 }
 
+#list h1 {
+  color: white;
+}
+
 #todo-form > [type="text"] {
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px 0px 0px 4px;
   font-size: 20px;
   padding: 5px;
   margin: 0;
   border-right: none;
+  outline: none;
 }
 
 button {
-  border: 1px solid #ccc;
+  border: none;
   font-weight: bold;
   border-radius: 0px 4px 4px 0px;
   font-size: 20px;
@@ -251,15 +256,55 @@ button {
   padding: 5px 10px;
   margin: 0;
   border-left: none;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: #afbdff;
+  background-color: white;
+  transition: 0.5s;
 }
 
 select {
-  border: 1px solid #ccc;
+  border: none;
   font-weight: bold;
   border-radius: 4px;
   font-size: 20px;
   -webkit-appearance: none;
   color: white;
-  background-color: #c3a0ff;
-  padding: 5px;
+  background-color: orange;
+  padding: 5px 10px;
+  outline: none;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+#todo-list li {
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px grey;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.fa-circle {
+  color: #ddd;
+  padding: 0px 8px;
+}
+
+.fa-circle:hover {
+  color: #9dff9d;
+}
+
+.fa-times:hover {
+  color: #ff9d9d;
+}
+
+.fa-times {
+  color: #efefef;
+  padding: 0px 8px;
 }

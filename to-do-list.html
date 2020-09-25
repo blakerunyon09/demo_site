@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -31,6 +31,7 @@
       </p>
     <![endif]-->
     <div id="list">
+      <h1>To Do List</h1>
       <form id="todo-form">
         <input type="text" /><button><i class="fa fa-plus"></i></button>
         <select id="selector" form="todo-form">
@@ -41,9 +42,14 @@
       </form>
       <ul id="todo-list">
         <li>
+          <i class="far fa-circle"></i>
           Sample Task
-          <span class="done">Done</span>
-          <span class="delete">Delete</span>
+          <i class="fas fa-times"></i>
+        </li>
+        <li>
+          <i class="far fa-circle"></i>
+          Sample Task
+          <i class="fas fa-times"></i>
         </li>
       </ul>
     </div>
