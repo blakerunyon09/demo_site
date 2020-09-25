@@ -12,7 +12,7 @@ fullList.addEventListener("click", updateItems);
 function addListItem(e) {
   e.preventDefault();
   if (todoInput.value === "") {
-    todoSubmit.style.transition = ".75s";
+    todoSubmit.style.transition = "1s";
     todoSubmit.style.color = "red";
     todoSubmit.style.background = "white";
     todoSubmit.addEventListener("transitionend", () => {
