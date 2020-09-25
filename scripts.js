@@ -1,7 +1,7 @@
 // Selectors
 const todoForm = document.querySelector("#todo-form");
 const todoInput = todoForm.childNodes[1];
-const todoSubmit = todoForm.childNodes[3];
+const todoSubmit = todoForm.childNodes[2];
 const fullList = document.querySelector("#todo-list");
 
 // Listeners

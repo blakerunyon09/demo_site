@@ -233,20 +233,24 @@ header {
 
 #todo-form > [type="text"] {
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 4px 0px 0px 4px;
   font-size: 20px;
   padding: 5px;
+  margin: 0;
+  border-right: none;
 }
 
-#todo-form > [type="submit"] {
+button {
   border: 1px solid #ccc;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   font-size: 20px;
   -webkit-appearance: none;
   color: white;
   background-color: #afbdff;
-  padding: 5px;
+  padding: 5px 10px;
+  margin: 0;
+  border-left: none;
 }
 
 select {
