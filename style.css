@@ -235,12 +235,18 @@ header {
   color: white;
 }
 
+#todo-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 #todo-form > [type="text"] {
   border: none;
   border-radius: 4px 0px 0px 4px;
   font-size: 20px;
   padding: 5px;
-  margin: 0;
+  margin: 5px 0;
   border-right: none;
   outline: none;
 }
@@ -254,7 +260,7 @@ button {
   color: white;
   background-color: #afbdff;
   padding: 5px 10px;
-  margin: 0;
+  margin: 5px 0;
   border-left: none;
   transition: 0.5s;
 }
@@ -275,6 +281,7 @@ select {
   background-color: orange;
   padding: 5px 10px;
   outline: none;
+  margin: 5px;
 }
 
 #todo-list {
