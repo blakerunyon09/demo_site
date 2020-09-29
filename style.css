@@ -296,6 +296,11 @@ select {
   padding: 0px 8px;
 }
 
+.fa-check-circle {
+  color: #9dff9d;
+  padding: 0px 8px;
+}
+
 .fa-circle:hover {
   color: #9dff9d;
 }
